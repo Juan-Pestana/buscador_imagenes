@@ -15,7 +15,7 @@ function App() {
   
 
       const imgXPg= 30
-      const apiKey= process.env.REACT_APP_IMAGES_API
+      const apiKey= `${process.env.REACT_APP_IMAGES_API}`
       const url = `https://pixabay.com/api/?key=${apiKey}&q=${busqueda}&per_page=${imgXPg}&page=${paginaActual}`
 
       const respuesta = await fetch(url)
